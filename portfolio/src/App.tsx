@@ -10,21 +10,22 @@ import Contact from "./Components/Contact/Contact"
 
 function App() {
 
+  
   return (
-    <>
-      <div className="h-[100vh] w-[100vw] bg-secondary-800">
-        <Navbar />
+    <div className="min-h-[100vh] h-auto bg-secondary-800 flex">
+      <Navbar />
 
-        <Routes >
+      <main className="flex-1 lg:ml-[60px] mb-[60px] lg:mb-0 ">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-
         </Routes>
-      </div>
-    </>
-  )
+      </main>
+    </div>
+  );
+
 }
 
 export default App

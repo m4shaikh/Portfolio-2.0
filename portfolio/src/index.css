@@ -38,4 +38,15 @@
   --color-secondary-800: #252525; /* Base */
   --color-secondary-900: #171717;
   --color-secondary-950: #0a0a0a;
+
+  --breakpoint-xs: 22.5rem;   /* 360px */
+  --breakpoint-sm: 30rem;     /* 480px */
+  --breakpoint-md: 40rem;     /* 640px */
+  --breakpoint-lg: 48rem;     /* 768px */
+  --breakpoint-xl: 64rem;     /* 1024px */
+  --breakpoint-2xl: 80rem;    /* 1280px */
+  --breakpoint-3xl: 96rem;    /* 1536px */
+  --breakpoint-4xl: 112.5rem; /* 1800px */
 }
+
+

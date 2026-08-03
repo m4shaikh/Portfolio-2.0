@@ -1,36 +1,44 @@
 import React from 'react';
 
 const Projects = () => {
-  // Placeholder data - replace with your actual projects
+  // Project data extracted from MoinuddinResume.pdf and GitHub repositories[cite: 2, 3, 4, 5]
   const featuredProjects = [
     {
       id: 1,
-      title: "E-Commerce API Service",
-      description: "A highly scalable microservice architecture for an e-commerce backend handling auth, inventory, and Stripe payments.",
-      tech: ["Node.js", "Express", "MongoDB", "Stripe API"],
-      githubLink: "#", // Replace with real link
-      liveLink: "#"    // Replace with real link
+      title: "HeadChef Platform", //[cite: 5]
+      description: "A production-ready full-stack recipe platform featuring interactive cooking sessions, timers, progress tracking, and JWT/OAuth authentication.", //[cite: 3, 5]
+      tech: ["Django REST", "React", "TypeScript", "PostgreSQL"], //[cite: 3, 5]
+      githubLink: "https://github.com/m4shaikh", //[cite: 5]
+      liveLink: "https://m4shaikh.in" //[cite: 5]
     },
     {
       id: 2,
-      title: "Real-time Chat Server",
-      description: "WebSocket-based chat server supporting private messaging, group rooms, and real-time typing indicators.",
-      tech: ["Socket.io", "Redis", "PostgreSQL", "React"],
-      githubLink: "#",
-      liveLink: "#"
+      title: "Full-Stack E-Commerce", //[cite: 5]
+      description: "E-commerce platform featuring a shopping cart, order processing, Stripe payments, and a dedicated seller dashboard for managing product listings.", //[cite: 2, 5]
+      tech: ["Django", "Python", "Stripe", "HTML/CSS"], //[cite: 2, 5]
+      githubLink: "https://github.com/m4shaikh", //[cite: 5]
+      liveLink: "https://m4shaikh.in" //[cite: 5]
     },
     {
       id: 3,
-      title: "Cloud Storage CLI",
-      description: "A command-line tool built to securely upload, encrypt, and retrieve files from AWS S3 buckets.",
-      tech: ["Python", "AWS S3", "Cryptography", "Click"],
-      githubLink: "#",
+      title: "LipRead AI System", //[cite: 5]
+      description: "Visual speech recognition system built as a final year project, utilizing CNN and Bidirectional LSTM models to achieve a 1.12% Word Error Rate on the Oxford LRS2 dataset.", //[cite: 5]
+      tech: ["TensorFlow", "OpenCV", "Streamlit", "Python"], //[cite: 5]
+      githubLink: "https://github.com/m4shaikh", //[cite: 5]
+      liveLink: "#"
+    },
+    {
+      id: 4,
+      title: "Social Media REST API", //[cite: 4]
+      description: "A scalable backend REST API for a social media application handling user routing, OAuth2 authentication, and secure database migrations.", //[cite: 4]
+      tech: ["FastAPI", "Python", "SQLAlchemy", "Alembic"], //[cite: 4]
+      githubLink: "https://github.com/m4shaikh", //[cite: 5]
       liveLink: "#"
     }
   ];
 
   return (
-    <div className="min-h-screen ml-[60px] flex flex-col justify-center px-6 py-12 md:px-8 bg-[#1a1a1a] text-white select-none">
+    <div className="min-h-screen flex flex-col justify-center px-6 py-12 md:px-8 bg-[#1a1a1a] text-white select-none">
       
       {/* Top Section Tag */}
       <div className="space-y-1 mb-8">
@@ -49,7 +57,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {featuredProjects.map((project) => (
             <div key={project.id} className="bg-[#1e1e1e] border border-gray-800 rounded-lg flex flex-col overflow-hidden hover:-translate-y-2 transition-transform duration-300 shadow-xl">
               

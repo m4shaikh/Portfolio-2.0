@@ -1,24 +1,24 @@
 import React from 'react';
 
 const Skills = () => {
-  // Placeholder data - replace with your actual skills
+  // Skill data extracted from MoinuddinResume.pdf[cite: 5]
   const skillCategories = [
     {
-      title: "Backend & Languages",
-      skills: ["Node.js", "Python", "Java", "Go", "TypeScript", "C++"]
+      title: "Languages & Backend", //[cite: 5]
+      skills: ["Python", "JavaScript (ES6+)", "TypeScript", "C#", "C++", "Django", "FastAPI", ".NET"] //[cite: 5]
     },
     {
-      title: "Databases & ORMs",
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Mongoose", "SQL"]
+      title: "Frontend & Databases", //[cite: 5]
+      skills: ["React", "Redux", "Next.js", "Tailwind CSS", "PostgreSQL", "MySQL", "MongoDB"] //[cite: 5]
     },
     {
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Docker", "Linux", "Git", "CI/CD", "Nginx"]
+      title: "Tools & DevOps", //[cite: 5]
+      skills: ["Git", "GitHub", "Docker", "Postman", "Cloudinary", "JWT/OAuth", "RBAC"] //[cite: 5]
     }
   ];
 
   return (
-    <div className="min-h-screen ml-[60px] flex flex-col justify-center px-6 py-12 md:px-8 bg-[#1a1a1a] text-white select-none">
+    <div className="min-h-screen flex flex-col justify-center px-6 py-12 md:px-8 bg-[#1a1a1a] text-white select-none">
       
       {/* Top Section Tag */}
       <div className="space-y-1 mb-8">
