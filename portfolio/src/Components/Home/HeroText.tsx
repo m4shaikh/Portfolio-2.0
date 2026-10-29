@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 const HeroText = () => {
     return (
@@ -22,17 +22,24 @@ const HeroText = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-2 pl-8">
-                <button className="border-2 border-green-500 px-6 hover:bg-green-500 hover:text-black text-green-500 font-label  rounded-sm transition-all duration-300">
+                <Link 
+                    to="/contact" 
+                    className="border-2 border-green-500 px-6 py-2.5 flex items-center justify-center hover:bg-green-500 hover:text-black text-green-500 font-label rounded-sm transition-all duration-300"
+                >
                     Contact Me
-                </button>
-                <button className="bg-primary-500 hover:opacity-90 text-white font-label px-6 py-2.5 rounded-sm transition-all duration-300 shadow-lg shadow-primary-500/20">
+                </Link>
+                <a 
+                    href="/resume.pdf" 
+                    download="Moinuddin_Shaikh_Resume.pdf"
+                    className="bg-primary-500 hover:opacity-90 text-white font-label px-6 py-2.5 rounded-sm transition-all duration-300 shadow-lg shadow-primary-500/20 flex items-center justify-center"
+                >
                     Download Resume
-                </button>
+                </a>
             </div>
             <span className="font-tag text-blue-500 pl-6">&lt;/body&gt;</span>
             <span className="font-tag text-blue-500 pl-2">&lt;/html&gt;</span>
         </div>
-    )
-}
+    );
+};
 
-export default HeroText
+export default HeroText;
