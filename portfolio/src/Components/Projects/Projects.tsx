@@ -48,14 +48,14 @@ const Projects = () => {
       description: "Python script that helps with uploading large file on Telegram channel, you change chunk size which according to size",  
       tech: ["Python", "Telethon"],  
       githubLink: "https://github.com/m4shaikh/TeleUpload",  
-      liveLink: null
+      liveLink: null 
     }, {
       id: 5,
       title: "BlogApp",  
       description: "A blog application where users can post and interect with posts. ",  
       tech: ["Python", "Django", "HTML", "CSS"],  
       githubLink: "https://github.com/m4shaikh/TeleUpload",  
-      liveLink: null
+      liveLink: null 
     }
   ];
 
@@ -65,7 +65,7 @@ const Projects = () => {
       {/* Top Section Tag */}
       <div className="space-y-1 mb-8">
         <span className="font-tag text-blue-500 block">&lt;section id=&quot;projects&quot;&gt;</span>
-      </div>
+      </div> 
 
       <div className="pl-4 md:pl-16 w-full max-w-6xl mx-auto flex-1">
 
@@ -87,7 +87,7 @@ const Projects = () => {
               <div className="bg-[#2d2d2d] px-4 py-2 flex items-center border-b border-gray-800 gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-50"></div>
               </div>
 
               {/* Card Body */}
