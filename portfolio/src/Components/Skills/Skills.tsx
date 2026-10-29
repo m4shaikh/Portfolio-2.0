@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Skills = () => {
   // Skill data extracted from MoinuddinResume.pdf[cite: 5]
