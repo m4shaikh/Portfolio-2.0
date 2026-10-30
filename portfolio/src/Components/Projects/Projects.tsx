@@ -40,7 +40,7 @@ const Projects = () => {
       description: "A scalable backend REST API for a social media application handling user routing, OAuth2 authentication, and secure database migrations.",  
       tech: ["FastAPI", "Python", "SQLAlchemy", "Alembic"],  
       githubLink: "https://github.com/m4shaikh/Socialmedia_Api",  
-      liveLink: "#"
+      liveLink: null
     },
     {
       id: 5,
@@ -62,14 +62,12 @@ const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center px-6 py-12 md:px-8 bg-[#1a1a1a] text-white select-none">
 
-      {/* Top Section Tag */}
       <div className="space-y-1 mb-8">
         <span className="font-tag text-blue-500 block">&lt;section id=&quot;projects&quot;&gt;</span>
       </div> 
 
       <div className="pl-4 md:pl-16 w-full max-w-6xl mx-auto flex-1">
 
-        {/* Heading */}
         <div className="mb-12">
           <span className="font-tag text-blue-500 block mb-2">&lt;h2&gt;</span>
           <h2 className="font-rg text-3xl md:text-5xl font-bold uppercase tracking-wide">
@@ -78,28 +76,24 @@ const Projects = () => {
           <span className="font-tag text-blue-500 block mt-2">&lt;/h2&gt;</span>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {featuredProjects.map((project) => (
             <div key={project.id} className="bg-[#1e1e1e] border border-gray-800 rounded-lg flex flex-col overflow-hidden hover:-translate-y-2 transition-transform duration-300 shadow-xl">
 
-              {/* Card Terminal Header */}
               <div className="bg-[#2d2d2d] px-4 py-2 flex items-center border-b border-gray-800 gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-green-50"></div>
               </div>
 
-              {/* Card Body */}
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-rg text-2xl font-bold text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="font-label text-gray-400 text-sm mb-6 flex-1 leading-relaxed">
+                <p className="font-label text-gray-400 mb-6 flex-1 leading-relaxed">
                   {project.description}
                 </p>
 
-                {/* Tech Stack Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, idx) => (
                     <span key={idx} className="text-xs font-mono text-orange-400 bg-orange-400/10 px-2 py-1 rounded">
@@ -108,7 +102,6 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-4 mt-auto">
                   <a href={project.githubLink} target="_blank" rel="noreferrer" className="flex-1 text-center border border-gray-600 hover:border-white text-gray-300 hover:text-white font-label text-sm py-2 rounded-sm transition-colors">
                     GitHub

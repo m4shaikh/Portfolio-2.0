@@ -6,8 +6,6 @@ import 'leaflet/dist/leaflet.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
-
-// Fix Leaflet's default marker icon issue in Vite / TypeScript builds
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -95,35 +93,31 @@ const Contact: React.FC = () => {
 
   return (
     <section className="min-h-screen lg:h-screen w-full lg:overflow-hidden bg-[#1a1a1a] text-white grid grid-cols-1 lg:grid-cols-2">
-      
-      {/* LEFT HALF: Decorative Tags & Contact Form (Fitted to 100vh) */}
-      <div className="flex flex-col justify-center lg:h-screen px-6 py-8 md:px-12 lg:px-16 xl:px-20">
-        <div className="w-full max-w-xl mx-auto">
-          <span className="font-tag text-neutral-500 text-sm select-none block">
-            &lt;section&gt;
+
+      <div className="flex flex-col justify-center lg:h-screen pr-2 py-8 md:pr-4 lg:pr-6 xl:pr-9">
+          <span className="font-tag pl-8 xl:pl-12 text-blue-500 select-none block text-lg">
+            &lt;section id= "contact" &gt; 
           </span>
+        <div className="w-full max-w-xl mx-auto">
           <div className="pl-3 my-0.5">
-            <span className="font-tag text-neutral-500 text-sm select-none block">
+            <span className="font-tag pl-2 xl:pl-4 text-blue-500 select-none block text-lg">
               &lt;h1&gt;
             </span>
-            <h1 className="font-label text-4xl sm:text-5xl font-bold text-primary-500 tracking-wide my-0.5">
-              Contact Me
+            <h1 className="font-rg text-3xl md:text-5xl font-bold text-primary-500 tracking-wide pl-4 xl:pl-8 ">
+              <span className='text-white'>CONTACT</span> ME
             </h1>
-            <span className="font-tag text-neutral-500 text-sm select-none block">
+            <span className="font-tag text-blue-500 select-none block pl-2 xl:pl-4 text-lg">
               &lt;/h1&gt;
             </span>
           </div>
-          <span className="font-tag text-neutral-500 text-sm select-none block">
-            &lt;/section&gt;
-          </span>
 
-          <p className="font-rg text-neutral-300 mt-2 mb-5 text-sm sm:text-base leading-relaxed">
+
+          <p className="font-rg text-neutral-300 px-4 xl:px-8  mt-2 mb-5 text-sm sm:text-base leading-relaxed">
             I’m open to new opportunities and collaborations! Feel free to
             send a message using the form below or reach out directly.
           </p>
 
-          {/* Contact Form */}
-          <form ref={formRef} onSubmit={sendEmail} className="space-y-3.5">
+          <form ref={formRef} onSubmit={sendEmail} className="space-y-3.5 px-4 xl:px-8 ">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
               <input
                 type="text"
@@ -182,12 +176,13 @@ const Contact: React.FC = () => {
             </div>
           </form>
         </div>
+          <span className="font-tag text-blue-500 select-none block pl-8 xl:pl-12 text-lg">
+            &lt;/section&gt;
+          </span> 
       </div>
 
-      {/* RIGHT HALF: Full-Bleed Map with Top Contact & Bottom Location Overlay */}
       <div className="relative w-full h-[380px] lg:h-screen bg-[#1e1e1e] border-t lg:border-t-0 lg:border-l border-neutral-800">
-        
-        {/* TOP OVERLAY: Phone Number & Email Address */}
+
         <div className="absolute top-4 left-4 right-4 z-[10] grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto">
           <a
             href="tel:+919173887484"
@@ -224,7 +219,6 @@ const Contact: React.FC = () => {
           </a>
         </div>
 
-        {/* BOTTOM OVERLAY: Name & Location Badge */}
         <div className="absolute bottom-6 left-4 z-[1000] bg-[#141414]/90 backdrop-blur-md border border-neutral-800 rounded-sm p-3.5 shadow-lg max-w-xs">
           <div className="flex items-start gap-2.5">
             <MapPin className="w-4 h-4 text-primary-500 shrink-0 mt-0.5" />
@@ -259,6 +253,7 @@ const Contact: React.FC = () => {
       </div>
 
       <ToastContainer />
+
     </section>
   );
 };

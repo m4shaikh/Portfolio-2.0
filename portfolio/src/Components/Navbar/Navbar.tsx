@@ -52,7 +52,7 @@ const Navbar = () => {
                 <div className="flex flex-col gap-5 text-xl text-gray-400 pb-6">
 
                     <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/m4shaikh"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:text-white transition"
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/yourusername"
+                        href="https://linkedin.com/in/m4shaikh"
                         target="_blank"
                         rel="noreferrer"
                         className="hover:text-blue-500 transition"
